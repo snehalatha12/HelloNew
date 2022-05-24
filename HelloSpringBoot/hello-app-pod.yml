@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: hello-app-pod
+  labels:
+    name: hello-app-pod
+    app: demo-hello-app
+spec:
+  containers: 
+  - name: hello-app
+    image: latha123456/hello.jar
+    ports :
+    - containerPort: 80
